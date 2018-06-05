@@ -10,9 +10,9 @@ date_default_timezone_set('Asia/Jakarta');
 class Database
 {
 		var $host 	= "localhost";
-		var $uname 	= "callesta_ctf";
-		var $pass 	= "oV!8,igcvciw";
-		var $db 	= "callesta_ctf";
+		var $uname 	= "root";
+		var $pass 	= "";
+		var $db 	= "ctf";
 
 // 		var $host = "localhost";
 // 		var $uname = "root";
