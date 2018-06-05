@@ -36,3 +36,8 @@ How to?
 
 How to add link in soal? user 
 >`<a href="link">link</a>`
+
+
+CTF Callestasia sudah tidak mengunakan source ini. Dikarenakan [insiden](http://blog.callestasia.org/2018/05/09/sayonara-ctf-callestasia/#more-339) 
+
+CTF Callestasia sudah mengunakan source sendiri. Kalian bisa bermain pada link ini [Main](http://ctf.callestasia.org)
