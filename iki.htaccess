@@ -1,0 +1,59 @@
+
+RewriteEngine On
+Options -Indexes
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/manage-member$ 				admin/manage-member.php 		[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/manage-flag$ 				admin/manage-flag.php 			[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/manage-tutor$ 				admin/manage-tutor.php 			[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/manage-info$ 				admin/manage-info.php 			[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/tambahsoal$ 					admin/tambah-soal.php 			[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/tambahuser$ 					admin/tambah-user.php 			[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/tambahinfo$ 					admin/tambah-info.php 			[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/tambahtutor$ 					admin/tambah-tutor.php 			[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/edit/([0-9]+)/soal?$    		admin/edit-soal.php?id=$1 		[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/edit/([0-9]+)/tutor?$    		admin/edit-tutor.php?id=$1 		[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/edit/([0-9]+)/user?$    		admin/edit-user.php?id=$1 		[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/delete/([0-9]+)/(.*?)?$    	admin/delete.php?id=$1&type=$2 	[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/logout?$    					admin/logout.php				[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^admin/login?$    					admin/login.php				    [NC,L]
+
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^member/data?$    					member/change.data.php				[NC,L]
+RewriteRule ^member/password?$    					member/change.password.php				[NC,L]
+RewriteRule ^member/view?$    					member/view.php				[NC,L]
+RewriteRule ^member/view/([0-9]+)?$    					member/lihat.soal.php?id=$1				[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^member/tutor?$    					member/vtutor.php				[NC,L]
+RewriteRule ^member/tutor/([0-9]+)?$    				member/lihat.tutor.php?id=$1			[NC,L]
+RewriteRule ^member/done?$    					member/done.php				[NC,L]
+RewriteRule ^member/done/([0-9]+)?$    					member/done.php?id=$1				[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^member/soal?$    					member/soal.php				[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^member/prize?$    					member/prize.php				[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^member/rules?$    					member/rulez.php				[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^member/contact?$    				member/contact.php				[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^member/logout?$    				member/logout.php				[NC,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^member/login?$    					member/login.php				[NC,L]
+RewriteRule ^member/signup?$    					member/singingup.php				[NC,L]
+RewriteCond %{HTTP_HOST} ^smaldiva\.callestasia\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.smaldiva\.callestasia\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^/?$ "http\:\/\/belajar\.callestasia\.com" [R=301,L]
